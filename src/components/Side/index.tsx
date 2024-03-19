@@ -8,7 +8,9 @@ import SpecialistListing from '@/components/SpecialistListing';
 
 function Side() {
   const { mainText1, mainText2, mainText3, mainText4, mainText5 } = getText();
-  const { data } = useFetch<ISpecialist[]>('http://localhost:4000/specialists');
+  const { data } = useFetch<ISpecialist[]>(
+    `${process.env.BACKEND_URL}/specialists`
+  );
 
   return (
     <StyledSide>

@@ -7,6 +7,7 @@ import getText from '@/services/getText';
 import storeInLocalStorage from '@/services/storeInLocalStorage';
 import getCountries from '@/services/getCountries';
 import IUserForm from '@/interfaces/IUserForm';
+import submitUser from '@/services/submitUser';
 
 function UserForm() {
   const {
@@ -41,14 +42,23 @@ function UserForm() {
 
   const [formData, setFormData] = useState(userFormDataDefault);
 
+  const [error, setError] = useState(false);
+
   const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    setError(false);
   };
 
   const onSubmitHandler = async (e: ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
-    storeInLocalStorage(1, formData);
-    resetForm();
+
+    const { id } = await submitUser(formData);
+    if (id) {
+      storeInLocalStorage(id, formData);
+      resetForm();
+    } else {
+      setError(true);
+    }
   };
 
   const resetForm = () => {

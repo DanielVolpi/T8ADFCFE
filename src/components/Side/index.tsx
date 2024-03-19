@@ -10,14 +10,6 @@ function Side() {
   const { mainText1, mainText2, mainText3, mainText4, mainText5 } = getText();
   const { data } = useFetch<ISpecialist[]>('http://localhost:4000/specialists');
 
-  // useEffect(() => {
-  //   const fetchSpecialists = async () => {
-  //     setSpecialists(await getSpecialists());
-  //   };
-
-  //   fetchSpecialists();
-  // }, []);
-
   return (
     <StyledSide>
       <div>{mainText1}</div>

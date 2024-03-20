@@ -6,7 +6,7 @@ import { themeData } from '@/configuration/themeData';
 
 const StyledFormSelectField = styled.select`
   //Dimensions
-  width: 390px;
+  width: 368px;
   height: 50px;
 
   //Borders
@@ -28,6 +28,11 @@ const StyledFormSelectField = styled.select`
   background-repeat: no-repeat;
   background-position-x: 95%;
   background-position-y: 50%;
+
+  &:hover {
+    border-color: ${themeData.deepGrey};
+    transform: scale(1.02);
+  }
 
   ${mediaQueries.smallResolution} {
   }

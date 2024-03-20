@@ -6,7 +6,7 @@ import { fontData } from '@/configuration/fontData';
 
 const StyledFormButton = styled.button`
   //Dimensions
-  width: 390px;
+  width: 368px;
   height: 50px;
 
   //Borders
@@ -24,6 +24,11 @@ const StyledFormButton = styled.button`
 
   //Alignment
   margin-top: 15px;
+
+  &:hover {
+    background-color: ${themeData.deepGrey};
+    transform: scale(1.02);
+  }
 
   ${mediaQueries.smallResolution} {
   }

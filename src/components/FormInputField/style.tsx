@@ -8,6 +8,7 @@ const StyledFormInputField = styled.input`
   //Dimensions
   width: 368px;
   height: 50px;
+  box-sizing: border-box;
 
   //Borders
   border: 2px solid ${themeData.lightGrey};
@@ -21,6 +22,11 @@ const StyledFormInputField = styled.input`
   vertical-align: middle;
   padding-left: 16px;
   margin-top: 5px;
+
+  &:hover {
+    border-color: ${themeData.deepGrey};
+    transform: scale(1.02);
+  }
 
   ${mediaQueries.smallResolution} {
   }

@@ -25,6 +25,9 @@ const StyledFormButton = styled.button`
   //Alignment
   margin-top: 15px;
 
+  //Details
+  cursor: pointer;
+
   &:hover {
     background-color: ${themeData.deepGrey};
     transform: scale(1.02);

@@ -15,7 +15,7 @@ const FormSelectField = React.lazy(
 );
 const FormButton = React.lazy(() => import('@/components/FormButton'));
 
-function UserForm() {
+function UserForm({ modalTrigger }: { modalTrigger: () => {} }) {
   const {
     formFirstNameField,
     formLastNameField,
@@ -60,6 +60,7 @@ function UserForm() {
     const { id } = await submitUser(formData);
     if (id) {
       storeInLocalStorage(id, formData);
+      modalTrigger();
       resetForm();
     } else {
       setError(true);

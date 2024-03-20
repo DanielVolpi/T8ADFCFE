@@ -9,6 +9,10 @@ const StyledRegistrationSection = styled.div`
   align-items: center;
   margin-top: 40px;
 
+  & > :first-child {
+    margin-bottom: 50px;
+  }
+
   ${mediaQueries.smallResolution} {
   }
 

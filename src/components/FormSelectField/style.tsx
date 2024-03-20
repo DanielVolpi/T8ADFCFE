@@ -29,6 +29,9 @@ const StyledFormSelectField = styled.select`
   background-position-x: 95%;
   background-position-y: 50%;
 
+  //Details
+  cursor: pointer;
+
   &:hover {
     border-color: ${themeData.deepGrey};
     transform: scale(1.02);

@@ -4,7 +4,9 @@ const getCountries = async () => {
       'https://restcountries.com/v3/all?fields=name'
     );
     const data = await response.json();
-    return data.map((country) => country.name.common);
+    return data
+      .map((country) => country.name.common)
+      .sort((a, b) => a.localeCompare(b));
   } catch (error) {
     console.error('Error Fetching Data:', error);
     return [];

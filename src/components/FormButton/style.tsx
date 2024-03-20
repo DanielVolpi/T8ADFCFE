@@ -4,23 +4,26 @@ import { mediaQueries } from '@/configuration/mediaQueryData';
 import { themeData } from '@/configuration/themeData';
 import { fontData } from '@/configuration/fontData';
 
-const StyledFormInputField = styled.input`
+const StyledFormButton = styled.button`
   //Dimensions
-  width: 368px;
+  width: 390px;
   height: 50px;
 
   //Borders
-  border: 2px solid ${themeData.lightGrey};
-  border-radius: 2px;
+  border: 0;
+
+  //Background
+  background-color: ${themeData.deepBlack};
 
   //Text
-  font-family: ${fontData.ProximaNovaRegular};
-  font-size: 16px;
-  color: ${themeData.lightGrey};
+  font-family: ${fontData.sharpSansSemiBold};
+  font-size: 19px;
+  color: ${themeData.white};
   line-height: normal;
   vertical-align: middle;
-  padding-left: 16px;
-  margin-top: 5px;
+
+  //Alignment
+  margin-top: 15px;
 
   ${mediaQueries.smallResolution} {
   }
@@ -32,4 +35,4 @@ const StyledFormInputField = styled.input`
   }
 `;
 
-export default StyledFormInputField;
+export default StyledFormButton;

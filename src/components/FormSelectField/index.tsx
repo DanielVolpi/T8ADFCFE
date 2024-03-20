@@ -6,6 +6,8 @@ import IFormSelectField from '@/interfaces/IFormSelectField';
 
 const StyledFormSelectField = React.lazy(() => import('./style'));
 
+const Label = React.lazy(() => import('@/components/Label'));
+
 function FormSelectField({
   label,
   name,
@@ -15,8 +17,7 @@ function FormSelectField({
   required,
 }: IFormSelectField) {
   return (
-    <label>
-      {label}:
+    <Label text={`${label}`}>
       <StyledFormSelectField
         name={name}
         value={value}
@@ -30,7 +31,7 @@ function FormSelectField({
           </option>
         ))}
       </StyledFormSelectField>
-    </label>
+    </Label>
   );
 }
 

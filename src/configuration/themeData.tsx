@@ -5,6 +5,7 @@ const themeData = {
   softBlack: '#00373e',
   grey: '#405457',
   deepGrey: '#021800',
+  lightGrey: '#68737D',
 };
 
 export { themeData };

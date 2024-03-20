@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
 import { mediaQueries } from '@/configuration/mediaQueryData';
-import { stylingData } from '@/configuration/stylingData';
 
-const StyledEventDetails = styled.div`
-  max-width: 565px;
+const StyledRegistrationSection = styled.div`
+  max-width: 463px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
 
   ${mediaQueries.smallResolution} {
-    min-width: ${stylingData.minWidth};
   }
 
   ${mediaQueries.mediumResolution} {
@@ -17,4 +19,4 @@ const StyledEventDetails = styled.div`
   }
 `;
 
-export default StyledEventDetails;
+export default StyledRegistrationSection;

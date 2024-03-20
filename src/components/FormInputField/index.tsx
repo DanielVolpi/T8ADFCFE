@@ -6,6 +6,8 @@ import IFormInputField from '@/interfaces/IFormInputField';
 
 const StyledFormInputField = React.lazy(() => import('./style'));
 
+const Label = React.lazy(() => import('@/components/Label'));
+
 function FormInputField({
   type,
   label,
@@ -15,8 +17,7 @@ function FormInputField({
   onChangeCallback,
 }: IFormInputField) {
   return (
-    <label>
-      {label}:
+    <Label text={`${label}`}>
       <StyledFormInputField
         type={type}
         name={name}
@@ -24,7 +25,7 @@ function FormInputField({
         required={required}
         onChange={onChangeCallback}
       />
-    </label>
+    </Label>
   );
 }
 

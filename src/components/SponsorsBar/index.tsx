@@ -8,6 +8,7 @@ function SponsorsBar() {
       <img
         src='/images/sponsors.jpg'
         alt='Sponsors: Cluster Financiero, asobanca, IPBF, hightelecom, EBANX and zendesk'
+        width='100%'
       />
     </StyledSponsorsBar>
   );

@@ -13,10 +13,10 @@ const FormInputField = React.lazy(() => import('@/components/FormInputField'));
 const FormSelectField = React.lazy(
   () => import('@/components/FormSelectField')
 );
+const FormButton = React.lazy(() => import('@/components/FormButton'));
 
 function UserForm() {
   const {
-    formTitle,
     formFirstNameField,
     formLastNameField,
     formMailField,
@@ -71,60 +71,57 @@ function UserForm() {
   };
 
   return (
-    <>
-      <div>{formTitle}</div>
-      <form onSubmit={onSubmitHandler}>
-        <FormInputField
-          type={'text'}
-          label={formFirstNameField}
-          name={'firstname'}
-          value={formData.firstname}
-          required
-          onChangeCallback={onChangeHandler}
-        />
-        <FormInputField
-          type={'text'}
-          name={'lastname'}
-          label={formLastNameField}
-          value={formData.lastname}
-          required
-          onChangeCallback={onChangeHandler}
-        />
-        <FormInputField
-          type={'email'}
-          name={'email'}
-          label={formMailField}
-          value={formData.email}
-          required
-          onChangeCallback={onChangeHandler}
-        />
-        <FormSelectField
-          label={formCountryField}
-          name={'country'}
-          value={formData.country}
-          options={countries}
-          required
-          onChangeCallback={onChangeHandler}
-        />
-        <FormInputField
-          type={'tel'}
-          name={'phoneNumber'}
-          label={formPhoneNumberField}
-          value={formData.phoneNumber}
-          required
-          onChangeCallback={onChangeHandler}
-        />
-        <FormInputField
-          type={'text'}
-          label={formPositionField}
-          name={'position'}
-          value={formData.position}
-          required
-          onChangeCallback={onChangeHandler}
-        />
-        <button type='submit'>{formSubmitButton}</button>
-      </form>
-    </>
+    <form onSubmit={onSubmitHandler}>
+      <FormInputField
+        type={'text'}
+        label={formFirstNameField}
+        name={'firstname'}
+        value={formData.firstname}
+        required
+        onChangeCallback={onChangeHandler}
+      />
+      <FormInputField
+        type={'text'}
+        name={'lastname'}
+        label={formLastNameField}
+        value={formData.lastname}
+        required
+        onChangeCallback={onChangeHandler}
+      />
+      <FormInputField
+        type={'email'}
+        name={'email'}
+        label={formMailField}
+        value={formData.email}
+        required
+        onChangeCallback={onChangeHandler}
+      />
+      <FormSelectField
+        label={formCountryField}
+        name={'country'}
+        value={formData.country}
+        options={countries}
+        required
+        onChangeCallback={onChangeHandler}
+      />
+      <FormInputField
+        type={'tel'}
+        name={'phoneNumber'}
+        label={formPhoneNumberField}
+        value={formData.phoneNumber}
+        required
+        onChangeCallback={onChangeHandler}
+      />
+      <FormInputField
+        type={'text'}
+        label={formPositionField}
+        name={'position'}
+        value={formData.position}
+        required
+        onChangeCallback={onChangeHandler}
+      />
+      <FormButton type='submit'>{formSubmitButton}</FormButton>
+    </form>
   );
 }
 

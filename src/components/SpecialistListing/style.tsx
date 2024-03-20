@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mediaQueries } from '@/configuration/globalData';
+import { mediaQueries } from '@/configuration/mediaQueryData';
 
 const StyledForm = styled.form`
   ${mediaQueries.smallResolution} {

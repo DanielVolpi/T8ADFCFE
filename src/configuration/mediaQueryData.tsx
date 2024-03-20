@@ -1,6 +1,6 @@
 const mediaQueriesBreakpoints = {
-  small: 600,
-  large: 900,
+  small: 768,
+  large: 1200,
 };
 
 const mediaQueries = {

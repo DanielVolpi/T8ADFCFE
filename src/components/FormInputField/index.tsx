@@ -1,8 +1,10 @@
 'use client';
 
 import React from 'react';
-import StyledFormInputField from './style';
+
 import IFormInputField from '@/interfaces/IFormInputField';
+
+const StyledFormInputField = React.lazy(() => import('./style'));
 
 function FormInputField({
   type,

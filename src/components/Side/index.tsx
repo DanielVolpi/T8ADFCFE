@@ -1,10 +1,17 @@
 'use client';
 
-import getText from '../../services/getText';
-import StyledSide from './style';
+import React from 'react';
+
 import useFetch from '@/hooks/useFetchSpecialists';
+import getText from '@/services/getText';
+
 import ISpecialist from '@/interfaces/ISpecialist';
-import SpecialistListing from '@/components/SpecialistListing';
+
+const StyledSide = React.lazy(() => import('./style'));
+
+const SpecialistListing = React.lazy(
+  () => import('@/components/SpecialistListing')
+);
 
 function Side() {
   const { mainText1, mainText2, mainText3, mainText4, mainText5 } = getText();

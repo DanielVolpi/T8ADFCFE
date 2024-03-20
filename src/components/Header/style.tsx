@@ -1,5 +1,7 @@
 import styled from 'styled-components';
+
 import { mediaQueries } from '@/configuration/mediaQueryData';
+import { stylingData } from '@/configuration/stylingData';
 
 const StyledHeader = styled.div`
   //Background
@@ -19,7 +21,7 @@ const StyledHeader = styled.div`
   margin: 0 auto;
 
   ${mediaQueries.smallResolution} {
-    min-width: 500px;
+    min-width: ${stylingData.minWidth}px;
     min-height: 150px;
   }
 
@@ -27,7 +29,7 @@ const StyledHeader = styled.div`
   }
 
   ${mediaQueries.largeResolution} {
-    max-width: 1920px;
+    max-width: ${stylingData.maxWidth}px;
     max-height: 400px;
   }
 `;

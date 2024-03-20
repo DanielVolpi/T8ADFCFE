@@ -1,9 +1,13 @@
 'use client';
 
 import React from 'react';
-import SpecialistListingItem from '../SpecialistListingItem';
+
 import ISpecialist from '@/interfaces/ISpecialist';
 import ISpecialistListingEntry from '@/interfaces/ISpecialistListingEntry';
+
+const SpecialistListingItem = React.lazy(
+  () => import('@/components/SpecialistListingItem')
+);
 
 function SpecialistListing({ entries }: ISpecialistListingEntry) {
   return (

@@ -1,13 +1,22 @@
 'use client';
 
-import StyledFooter from './style';
+import React from 'react';
+
 import getText from '@/services/getText';
+
+const StyledFooter = React.lazy(() => import('./style'));
+
+const SocialNetworksBar = React.lazy(
+  () => import('@/components/SocialNetworksBar')
+);
+const FooterData = React.lazy(() => import('@/components/FooterData'));
 
 function Footer() {
   const { footer } = getText();
   return (
     <StyledFooter>
-      <div>{footer}</div>
+      <FooterData data={footer} />
+      <SocialNetworksBar />
     </StyledFooter>
   );
 }

@@ -2,7 +2,11 @@ import styled from 'styled-components';
 
 import { mediaQueries } from '@/configuration/mediaQueryData';
 
-const StyledFormInputField = styled.input`
+const StyledSocialNetworksBadge = styled.img`
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+
   ${mediaQueries.smallResolution} {
   }
 
@@ -13,4 +17,4 @@ const StyledFormInputField = styled.input`
   }
 `;
 
-export default StyledFormInputField;
+export default StyledSocialNetworksBadge;

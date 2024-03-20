@@ -1,27 +1,28 @@
 import styled from 'styled-components';
 
 import { mediaQueries } from '@/configuration/mediaQueryData';
-import { stylingData } from '@/configuration/stylingData';
+import { themeData } from '@/configuration/themeData';
+import { fontData } from '@/configuration/fontData';
 
 const StyledFooterData = styled.div`
-  width: 100vw;
-  margin: 0 auto;
+  //Text
+  font-family: ${fontData.ProximaNovaRegular};
+  font-size: 16px;
+  color: ${themeData.grey};
+  letter-spacing: 0;
+
+  //Alignment
+  margin: 0;
   display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
+  align-items: center;
 
   ${mediaQueries.smallResolution} {
-    min-width: ${stylingData.minWidth}px;
-    padding: 0 20px;
   }
 
   ${mediaQueries.mediumResolution} {
-    padding: 0 75px;
   }
 
   ${mediaQueries.largeResolution} {
-    max-width: ${stylingData.maxWidth}px;
-    padding: 0 150px;
   }
 `;
 

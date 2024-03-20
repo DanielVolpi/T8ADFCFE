@@ -23,6 +23,10 @@ const getText = () => {
     formPositionField: 'Puesto de trabajo',
     formSubmitButton: 'Inscríbete',
 
+    modalTitle: 'Gracias por tu interés.',
+    modalBody:
+      'Nos pondremos en contacto contigo pronto a través del correo electrónico que proporcionaste en el formulario.',
+
     footer: '©  2020',
   };
 };

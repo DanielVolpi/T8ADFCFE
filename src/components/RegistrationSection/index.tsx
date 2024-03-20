@@ -8,12 +8,12 @@ const UserForm = React.lazy(() => import('@/components/UserForm'));
 import getText from '@/services/getText';
 const TextLine = React.lazy(() => import('@/components/TextLine'));
 
-function RegistrationSection() {
+function RegistrationSection({ modalTrigger }: { modalTrigger: () => {} }) {
   const { formTitle } = getText();
   return (
     <StyledRegistrationSection>
       <TextLine main text={formTitle} />
-      <UserForm />
+      <UserForm modalTrigger={modalTrigger} />
     </StyledRegistrationSection>
   );
 }

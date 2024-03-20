@@ -14,12 +14,12 @@ function Side() {
 
   return (
     <StyledSide>
-      <div>{mainText1}</div>
-      <div>{mainText2}</div>
-      <div>{mainText3}</div>
+      <p>{mainText1}</p>
+      <p>{mainText2}</p>
+      <p>{mainText3}</p>
       {data && data.length > 0 && <SpecialistListing entries={data} />}
-      <div>{mainText4}</div>
-      <div>{mainText5}</div>
+      <p>{mainText4}</p>
+      <p>{mainText5}</p>
     </StyledSide>
   );
 }

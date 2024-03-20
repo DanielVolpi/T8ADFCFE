@@ -1,12 +1,14 @@
 'use client';
 
 import React from 'react';
+
 import getText from '@/services/getText';
-import Badge from '@/components/Badge';
-import MainHeaderLine from '@/components/MainHeaderLine';
-import SubHeader from '@/components/SubHeader';
 
 const StyledHeader = React.lazy(() => import('./style'));
+
+const Badge = React.lazy(() => import('@/components/Badge'));
+const MainHeaderLine = React.lazy(() => import('@/components/MainHeaderLine'));
+const SubHeader = React.lazy(() => import('@/components/SubHeader'));
 
 function Header() {
   const { headerType, headerTitle1, headerTitle2, headerDate } = getText();

@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+
 import { mediaQueries } from '@/configuration/mediaQueryData';
 import { themeData } from '@/configuration/themeData';
 import { fontData } from '@/configuration/fontData';
+
 import IStyledMainHeaderLine from '@/interfaces/IStyledMainHeader';
 
 const StyledMainHeaderLine = styled.h1<IStyledMainHeaderLine>`

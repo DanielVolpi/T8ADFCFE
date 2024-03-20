@@ -1,7 +1,10 @@
 'use client';
 
+import React from 'react';
+
 import ISpecialist from '@/interfaces/ISpecialist';
-import StyledListingItem from './style';
+
+const StyledListingItem = React.lazy(() => import('./style'));
 
 function SpecialistListingItem({
   _id,

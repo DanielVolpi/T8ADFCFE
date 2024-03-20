@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { mediaQueries } from '@/configuration/mediaQueryData';
 
 const StyledHeader = styled.div`

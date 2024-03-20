@@ -1,7 +1,9 @@
-import UserForm from '@/components/UserForm';
-import Header from '@/components/Header';
-import Side from '@/components/Side';
-import Footer from '@/components/Footer';
+import React from 'react';
+
+const UserForm = React.lazy(() => import('@/components/UserForm'));
+const Header = React.lazy(() => import('@/components/Header'));
+const Side = React.lazy(() => import('@/components/Side'));
+const Footer = React.lazy(() => import('@/components/Footer'));
 
 export default function Home() {
   return (

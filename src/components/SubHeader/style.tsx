@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { mediaQueries } from '@/configuration/mediaQueryData';
 import { themeData } from '@/configuration/themeData';
 import { fontData } from '@/configuration/fontData';

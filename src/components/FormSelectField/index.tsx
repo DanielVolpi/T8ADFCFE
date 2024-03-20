@@ -1,8 +1,10 @@
 'use client';
 
 import React from 'react';
-import StyledFormSelectField from './style';
+
 import IFormSelectField from '@/interfaces/IFormSelectField';
+
+const StyledFormSelectField = React.lazy(() => import('./style'));
 
 function FormSelectField({
   label,

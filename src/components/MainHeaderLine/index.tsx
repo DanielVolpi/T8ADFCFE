@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+
 const StyledMainHeaderLine = React.lazy(() => import('./style'));
 
 function MainHeaderLine({

@@ -1,13 +1,18 @@
 'use client';
 
 import React, { ChangeEvent, useEffect, useState } from 'react';
-import FormInputField from '@/components/FormInputField';
-import FormSelectField from '@/components/FormSelectField';
+
+import IUserForm from '@/interfaces/IUserForm';
+import submitUser from '@/services/submitUser';
+
 import getText from '@/services/getText';
 import storeInLocalStorage from '@/services/storeInLocalStorage';
 import getCountries from '@/services/getCountries';
-import IUserForm from '@/interfaces/IUserForm';
-import submitUser from '@/services/submitUser';
+
+const FormInputField = React.lazy(() => import('@/components/FormInputField'));
+const FormSelectField = React.lazy(
+  () => import('@/components/FormSelectField')
+);
 
 function UserForm() {
   const {

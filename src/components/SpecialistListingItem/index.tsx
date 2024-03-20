@@ -6,6 +6,9 @@ import ISpecialist from '@/interfaces/ISpecialist';
 
 const StyledListingItem = React.lazy(() => import('./style'));
 
+const ProfilePicture = React.lazy(() => import('@/components/ProfilePicture'));
+const TextLine = React.lazy(() => import('@/components/TextLine'));
+
 function SpecialistListingItem({
   _id,
   firstname,
@@ -14,9 +17,14 @@ function SpecialistListingItem({
 }: ISpecialist) {
   return (
     <StyledListingItem>
-      <div>X</div>
-      <div>{`${firstname} ${lastname}`}</div>
-      <div>{position}</div>
+      <ProfilePicture
+        src='/images/profilePicture.png'
+        alt={`${firstname} ${lastname}'s Profile Picture`}
+      />
+      <div style={{ padding: '20px' }}>
+        <TextLine main text={`${firstname} ${lastname}`} />
+        <TextLine text={`${position}`} />
+      </div>
     </StyledListingItem>
   );
 }

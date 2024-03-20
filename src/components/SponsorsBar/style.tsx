@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { mediaQueries } from '@/configuration/mediaQueryData';
 
-const StyledSide = styled.div`
+const StyledSponsorsBar = styled.div`
   ${mediaQueries.smallResolution} {
   }
 
@@ -13,4 +13,4 @@ const StyledSide = styled.div`
   }
 `;
 
-export default StyledSide;
+export default StyledSponsorsBar;

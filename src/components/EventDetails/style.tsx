@@ -2,10 +2,8 @@ import styled from 'styled-components';
 
 import { mediaQueries } from '@/configuration/mediaQueryData';
 
-const StyledListingItem = styled.div`
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
+const StyledSide = styled.div`
+  max-width: 565px;
 
   ${mediaQueries.smallResolution} {
   }
@@ -17,4 +15,4 @@ const StyledListingItem = styled.div`
   }
 `;
 
-export default StyledListingItem;
+export default StyledSide;

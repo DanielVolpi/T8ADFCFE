@@ -1,26 +1,29 @@
 import styled from 'styled-components';
 
 import { mediaQueries } from '@/configuration/mediaQueryData';
-import { stylingData } from '@/configuration/stylingData';
 
-const StyledFooterData = styled.div`
+const StyledBody = styled.div`
+  //Dimensions
   width: 100%;
+
+  //Layout
   display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
+  justify-content: space-around;
+  padding: 100px 0;
 
   ${mediaQueries.smallResolution} {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
-    padding: 20px;
-    min-width: ${stylingData.minWidth}px;
   }
 
   ${mediaQueries.mediumResolution} {
+    flex-direction: column;
+    align-items: center;
   }
 
   ${mediaQueries.largeResolution} {
+    flex-direction: row;
   }
 `;
 
-export default StyledFooterData;
+export default StyledBody;

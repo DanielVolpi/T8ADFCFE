@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { mediaQueries } from '@/configuration/mediaQueryData';
 
-const StyledSpecialistListing = styled.form`
+const StyledForm = styled.form`
   ${mediaQueries.smallResolution} {
   }
 
@@ -13,4 +13,4 @@ const StyledSpecialistListing = styled.form`
   }
 `;
 
-export default StyledSpecialistListing;
+export default StyledForm;

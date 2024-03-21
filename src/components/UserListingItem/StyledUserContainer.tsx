@@ -2,7 +2,10 @@ import styled from 'styled-components';
 
 import { mediaQueries } from '@/configuration/mediaQueryData';
 
-const StyledSpecialistListing = styled.form`
+const StyledUserContainer = styled.div`
+  display: flex;
+  align-items: center;
+
   ${mediaQueries.smallResolution} {
   }
 
@@ -13,4 +16,4 @@ const StyledSpecialistListing = styled.form`
   }
 `;
 
-export default StyledSpecialistListing;
+export default StyledUserContainer;

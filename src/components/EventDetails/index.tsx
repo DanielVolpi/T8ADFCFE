@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import useFetch from '@/hooks/useFetchSpecialists';
+import useFetch from '@/hooks/useFetch';
 import getText from '@/services/getText';
 
 import ISpecialist from '@/interfaces/ISpecialist';

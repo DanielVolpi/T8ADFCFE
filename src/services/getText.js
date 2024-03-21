@@ -28,6 +28,8 @@ const getText = () => {
       'Nos pondremos en contacto contigo pronto a través del correo electrónico que proporcionaste en el formulario.',
 
     footer: '©  2020',
+
+    userPageTitle: 'Usuarios Registados al Evento',
   };
 };
 

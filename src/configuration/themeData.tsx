@@ -7,8 +7,9 @@ const themeData = {
   grey: '#405457',
   deepGrey: '#021800',
   lightGrey: '#68737D',
-  pitchBlack: '#02353',
+  pitchBlack: '#02353C',
   translucentGrey: '#68737DC8',
+  nyanza: '#ECFFDC',
 };
 
 export { themeData };

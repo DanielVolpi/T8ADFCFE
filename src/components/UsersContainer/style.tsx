@@ -11,7 +11,7 @@ const StyledUsersContainer = styled.div`
   border-radius: 5px;
   margin: 5% auto;
   padding: 2% 1%;
-  background-color: ${themeData.nyanza};
+  background-color: ${themeData.lightGreen};
   min-width: 300px;
   max-width: 700px;
 

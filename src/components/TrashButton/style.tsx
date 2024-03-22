@@ -4,6 +4,7 @@ import { mediaQueries } from '@/configuration/mediaQueryData';
 
 const StyledTrashButton = styled.button`
   border: 0;
+  background-color: inherit;
 
   @keyframes shake {
     0% {

@@ -7,7 +7,7 @@ const StyledEventDetails = styled.div`
   max-width: 565px;
 
   ${mediaQueries.smallResolution} {
-    min-width: ${stylingData.minWidth};
+    min-width: ${stylingData.minWidth}px;
   }
 
   ${mediaQueries.mediumResolution} {

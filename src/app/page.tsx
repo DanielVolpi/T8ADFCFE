@@ -35,8 +35,8 @@ export default function Home() {
         <Loader />
       ) : (
         <main>
-          <Header />
           <MainContainer>
+            <Header />
             <Body>
               <EventDetails />
               <RegistrationSection modalTrigger={toggleModal} />

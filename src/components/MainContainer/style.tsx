@@ -18,16 +18,13 @@ const StyledMainContainer = styled.div`
   align-items: center;
 
   ${mediaQueries.smallResolution} {
-    padding: 0 20px;
   }
 
   ${mediaQueries.mediumResolution} {
-    padding: 0 75px;
   }
 
   ${mediaQueries.largeResolution} {
     max-width: ${stylingData.maxWidth}px;
-    padding: 0 100px;
   }
 `;
 

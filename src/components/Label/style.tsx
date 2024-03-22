@@ -18,6 +18,7 @@ const StyledLabel = styled.label`
   width: 368px;
 
   ${mediaQueries.smallResolution} {
+    width: 300px;
   }
 
   ${mediaQueries.mediumResolution} {

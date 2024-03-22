@@ -37,6 +37,7 @@ const StyledFormSelectField = styled.select`
   }
 
   ${mediaQueries.smallResolution} {
+    width: 300px;
   }
 
   ${mediaQueries.mediumResolution} {

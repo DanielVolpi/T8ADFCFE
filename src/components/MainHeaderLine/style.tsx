@@ -16,14 +16,13 @@ const StyledMainHeaderLine = styled.h1<IStyledMainHeaderLine>`
 
   //Alignment
   margin: 0;
-  width: 100%;
 
   //Coloring
   color: ${themeData.deepBlack};
 
   ${mediaQueries.smallResolution} {
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   ${mediaQueries.mediumResolution} {

@@ -1,5 +1,5 @@
 const stylingData = {
-  minWidth: 500,
+  minWidth: 360,
   maxWidth: 1920,
 };
 

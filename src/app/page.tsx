@@ -1,7 +1,9 @@
 'use client';
 
-import getText from '@/services/getText';
 import React, { useState } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+
+import getText from '@/services/getText';
 
 const Header = React.lazy(() => import('@/components/Header'));
 const EventDetails = React.lazy(() => import('@/components/EventDetails'));
@@ -23,21 +25,23 @@ export default function Home() {
   };
 
   return (
-    <main>
-      <Header />
-      <MainContainer>
-        <Body>
-          <EventDetails />
-          <RegistrationSection modalTrigger={toggleModal} />
-        </Body>
-        <Footer />
-      </MainContainer>
-      <Modal
-        title={modalTitle}
-        message={modalBody}
-        trigger={toggleModal}
-        isOpened={modal}
-      />
-    </main>
+    <BrowserRouter>
+      <main>
+        <Header />
+        <MainContainer>
+          <Body>
+            <EventDetails />
+            <RegistrationSection modalTrigger={toggleModal} />
+          </Body>
+          <Footer />
+        </MainContainer>
+        <Modal
+          title={modalTitle}
+          message={modalBody}
+          trigger={toggleModal}
+          isOpened={modal}
+        />
+      </main>
+    </BrowserRouter>
   );
 }

@@ -1,5 +1,7 @@
 'use client';
 
+import { BrowserRouter } from 'react-router-dom';
+
 import React, { useEffect, useState } from 'react';
 
 import getText from '@/services/getText';
@@ -35,11 +37,13 @@ export default function Users() {
   };
 
   return (
-    <UsersContainer>
-      <MainHeaderLine text={userPageTitle} />
-      {listOfUsers && listOfUsers.length > 0 && (
-        <UserListing entries={listOfUsers} deleteCallback={deleteUser} />
-      )}
-    </UsersContainer>
+    <BrowserRouter>
+      <UsersContainer>
+        <MainHeaderLine text={userPageTitle} />
+        {listOfUsers && listOfUsers.length > 0 && (
+          <UserListing entries={listOfUsers} deleteCallback={deleteUser} />
+        )}
+      </UsersContainer>
+    </BrowserRouter>
   );
 }

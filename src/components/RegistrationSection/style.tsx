@@ -8,7 +8,7 @@ const StyledRegistrationSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  padding-top: 20px;
   background-color: ${themeData.paleGrey};
 
   & > :first-child {
@@ -16,7 +16,7 @@ const StyledRegistrationSection = styled.div`
   }
 
   ${mediaQueries.smallResolution} {
-    padding: 20px 0 40px 0;
+    padding: 15px 0 40px 0;
   }
 
   ${mediaQueries.mediumResolution} {

@@ -42,13 +42,13 @@ export default function Home() {
               <RegistrationSection modalTrigger={toggleModal} />
             </Body>
             <Footer />
+            <Modal
+              title={modalTitle}
+              message={modalBody}
+              trigger={toggleModal}
+              isOpened={modal}
+            />
           </MainContainer>
-          <Modal
-            title={modalTitle}
-            message={modalBody}
-            trigger={toggleModal}
-            isOpened={modal}
-          />
         </main>
       )}
     </>

@@ -16,7 +16,6 @@ const StyledFooterData = styled.div`
     flex-direction: column-reverse;
     align-items: center;
     padding: 20px;
-    min-width: ${stylingData.minWidth}px;
   }
 
   ${mediaQueries.mediumResolution} {

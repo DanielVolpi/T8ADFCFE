@@ -28,7 +28,7 @@ const StyledFormInputField = styled.input`
   }
 
   ${mediaQueries.smallResolution} {
-    width: 300px;
+    max-width: 300px;
   }
 
   ${mediaQueries.mediumResolution} {

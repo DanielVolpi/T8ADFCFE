@@ -18,6 +18,7 @@ const StyledMainContainer = styled.div`
   align-items: center;
 
   ${mediaQueries.smallResolution} {
+    min-width: ${stylingData.minWidth}px;
   }
 
   ${mediaQueries.mediumResolution} {

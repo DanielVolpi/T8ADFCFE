@@ -10,7 +10,7 @@ const StyledRegistrationSection = styled.div`
   margin-top: 40px;
 
   & > :first-child {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   ${mediaQueries.smallResolution} {

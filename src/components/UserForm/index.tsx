@@ -13,6 +13,7 @@ const FormInputField = React.lazy(() => import('@/components/FormInputField'));
 const FormSelectField = React.lazy(
   () => import('@/components/FormSelectField')
 );
+const StyledForm = React.lazy(() => import('./style'));
 const FormButton = React.lazy(() => import('@/components/FormButton'));
 
 function UserForm({ modalTrigger }: { modalTrigger: () => {} }) {
@@ -72,10 +73,11 @@ function UserForm({ modalTrigger }: { modalTrigger: () => {} }) {
   };
 
   return (
-    <form onSubmit={onSubmitHandler}>
+    <StyledForm data-testid='user-form' onSubmit={onSubmitHandler}>
       <FormInputField
         type={'text'}
         label={formFirstNameField}
+        role={'input'}
         name={'firstname'}
         value={formData.firstname}
         required
@@ -122,7 +124,7 @@ function UserForm({ modalTrigger }: { modalTrigger: () => {} }) {
         onChangeCallback={onChangeHandler}
       />
       <FormButton type='submit'>{formSubmitButton}</FormButton>
-    </form>
+    </StyledForm>
   );
 }
 

@@ -4,13 +4,8 @@ import React, { ReactElement } from 'react';
 
 const StyledLabel = React.lazy(() => import('./style'));
 
-function Label({ text, children }: { text: string; children: ReactElement }) {
-  return (
-    <StyledLabel>
-      {text}
-      <div>{children}</div>
-    </StyledLabel>
-  );
+function Label({ text, forId }: { text: string; forId: string }) {
+  return <StyledLabel htmlFor={forId}>{text}</StyledLabel>;
 }
 
 export default Label;

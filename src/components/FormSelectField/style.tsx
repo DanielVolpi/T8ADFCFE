@@ -20,7 +20,6 @@ const StyledFormSelectField = styled.select`
   line-height: normal;
   vertical-align: middle;
   padding-left: 16px;
-  margin-top: 5px;
 
   //Select Arrow
   -webkit-appearance: none;

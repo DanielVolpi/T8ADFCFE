@@ -21,7 +21,6 @@ const StyledFormInputField = styled.input`
   line-height: normal;
   vertical-align: middle;
   padding-left: 16px;
-  margin-top: 5px;
 
   &:hover {
     border-color: ${themeData.deepGrey};

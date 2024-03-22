@@ -21,7 +21,7 @@ function SpecialistListingItem({
         src='/images/profilePicture.png'
         alt={`${firstname} ${lastname}'s Profile Picture`}
       />
-      <div style={{ padding: '20px' }}>
+      <div style={{ padding: '8px 0 8px 30px' }}>
         <TextLine main text={`${firstname} ${lastname}`} />
         <TextLine text={`${position}`} />
       </div>

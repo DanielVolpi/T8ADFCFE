@@ -23,7 +23,7 @@ const StyledFormButton = styled.button`
   vertical-align: middle;
 
   //Alignment
-  margin-top: 15px;
+  margin-top: 35px;
 
   //Details
   cursor: pointer;

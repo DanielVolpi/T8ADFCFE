@@ -1,6 +1,6 @@
 const deleteUser = async (id) => {
   try {
-    const url = `http://localhost:4000/users/${id}`;
+    const url = `${process.env.BACKEND_URL}/users/${id}`;
 
     const response = await fetch(url, {
       method: 'DELETE',

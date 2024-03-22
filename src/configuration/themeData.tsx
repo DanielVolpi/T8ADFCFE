@@ -9,7 +9,7 @@ const themeData = {
   lightGrey: '#68737D',
   pitchBlack: '#02353C',
   translucentGrey: '#68737DC8',
-  nyanza: '#ECFFDC',
+  lightGreen: '#ECFFDC',
   spinnerBlue: '#3B6EA5',
   paleGrey: '#F8F9F9',
 };

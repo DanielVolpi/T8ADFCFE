@@ -34,7 +34,7 @@ const StyledFormButton = styled.button`
   }
 
   ${mediaQueries.smallResolution} {
-    width: 300px;
+    max-width: 300px;
   }
 
   ${mediaQueries.mediumResolution} {

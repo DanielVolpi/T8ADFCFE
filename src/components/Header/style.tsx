@@ -21,7 +21,6 @@ const StyledHeader = styled.div`
   margin: 0 auto;
 
   ${mediaQueries.smallResolution} {
-    min-width: ${stylingData.minWidth}px;
     min-height: 150px;
   }
 

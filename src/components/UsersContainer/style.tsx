@@ -9,15 +9,18 @@ const StyledUsersContainer = styled.div`
   align-items: center;
   border: 2px solid ${themeData.deepBlack};
   border-radius: 5px;
-  margin: 5%;
-  padding: 5%;
+  margin: 5% auto;
+  padding: 2% 1%;
   background-color: ${themeData.nyanza};
-  min-width: 400px;
+  min-width: 300px;
+  max-width: 700px;
 
   ${mediaQueries.smallResolution} {
+    max-width: 350px;
   }
 
   ${mediaQueries.mediumResolution} {
+    max-width: 600px;
   }
 
   ${mediaQueries.largeResolution} {

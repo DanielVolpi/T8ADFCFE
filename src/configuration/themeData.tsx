@@ -11,6 +11,7 @@ const themeData = {
   translucentGrey: '#68737DC8',
   nyanza: '#ECFFDC',
   spinnerBlue: '#3B6EA5',
+  paleGrey: '#F8F9F9',
 };
 
 export { themeData };

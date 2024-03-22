@@ -17,15 +17,17 @@ function FormInputField({
   onChangeCallback,
 }: IFormInputField) {
   return (
-    <Label text={`${label}`}>
+    <>
+      <Label forId={name} text={label} />
       <StyledFormInputField
+        id={name}
         type={type}
         name={name}
         value={value}
         required={required}
         onChange={onChangeCallback}
       />
-    </Label>
+    </>
   );
 }
 

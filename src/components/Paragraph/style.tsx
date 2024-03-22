@@ -11,6 +11,7 @@ const StyledParagraph = styled.p`
   color: ${themeData.grey};
   letter-spacing: 0;
   line-height: 28px;
+  margin: 30px 0;
 
   ${mediaQueries.smallResolution} {
     font-size: 12px;

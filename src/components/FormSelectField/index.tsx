@@ -17,8 +17,10 @@ function FormSelectField({
   required,
 }: IFormSelectField) {
   return (
-    <Label text={`${label}`}>
+    <>
+      <Label forId={name} text={label} />
       <StyledFormSelectField
+        id={name}
         name={name}
         value={value}
         onChange={onChangeCallback}
@@ -31,7 +33,7 @@ function FormSelectField({
           </option>
         ))}
       </StyledFormSelectField>
-    </Label>
+    </>
   );
 }
 

@@ -1,11 +1,10 @@
 'use client';
 
-import { BrowserRouter } from 'react-router-dom';
-
 import React, { useEffect, useState } from 'react';
 
 import getText from '@/services/getText';
 
+import Loader from '@/components/Loader';
 const UserListing = React.lazy(() => import('@/components/UserListing'));
 const MainHeaderLine = React.lazy(() => import('@/components/MainHeaderLine'));
 const UsersContainer = React.lazy(() => import('@/components/UsersContainer'));
@@ -13,6 +12,7 @@ const UsersContainer = React.lazy(() => import('@/components/UsersContainer'));
 export default function Users() {
   const { userPageTitle } = getText();
   const [listOfUsers, setListOfUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -36,14 +36,22 @@ export default function Users() {
     );
   };
 
+  useEffect(() => {
+    setLoading(false);
+  }, []);
+
   return (
-    <BrowserRouter>
-      <UsersContainer>
-        <MainHeaderLine text={userPageTitle} />
-        {listOfUsers && listOfUsers.length > 0 && (
-          <UserListing entries={listOfUsers} deleteCallback={deleteUser} />
-        )}
-      </UsersContainer>
-    </BrowserRouter>
+    <>
+      {loading ? (
+        <Loader />
+      ) : (
+        <UsersContainer>
+          <MainHeaderLine text={userPageTitle} />
+          {listOfUsers && listOfUsers.length > 0 && (
+            <UserListing entries={listOfUsers} deleteCallback={deleteUser} />
+          )}
+        </UsersContainer>
+      )}
+    </>
   );
 }

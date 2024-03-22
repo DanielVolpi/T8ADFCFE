@@ -56,7 +56,7 @@ function UserForm({ modalTrigger }: IUserForm) {
     setError(false);
   };
 
-  const onSubmitHandler = async (e: FormEvent<HTMLInputElement>) => {
+  const onSubmitHandler = async (e: any) => {
     e.preventDefault();
 
     const { id } = await submitUser(formData);

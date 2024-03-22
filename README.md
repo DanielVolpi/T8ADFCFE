@@ -35,11 +35,11 @@ This site has to routes to explore:
 * /
 * /users
 
-On the home page (/) you can enter personal details of people that will go to an event to register them to said event. Be aware all fields are required in other to fill the application.
+On the home page (/) you can enter personal details of people that will go to an event to register them to said event. Be aware all fields are required to be filled in order to submit the application.
 
 On the users page* (/users) you can see the complete list of attendees to the event. Also, by using the Trash Bin button on each User Card you can remove said User from the event.
 
-\* Please excuse the poor design, I am but a humble web developer with zero web design, color matching skills and little to none good taste. Also there is no visual way to access the page as the home page design was provided and I didn't want to add an unsolicited navigate element there.
+\* Please excuse the poor design, I am but a humble web developer with zero web design and color matching skills and also little to none good taste. Also there is no visual way to access the page as the home page design was provided and I didn't want to add an unsolicited navigate element there.
 
 ## Special Thanks
 

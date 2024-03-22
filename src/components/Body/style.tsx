@@ -12,6 +12,7 @@ const StyledBody = styled.div`
   padding: 100px 0;
 
   ${mediaQueries.smallResolution} {
+    padding: 40px 0;
     flex-direction: column;
     align-items: center;
   }

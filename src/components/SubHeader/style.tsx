@@ -15,7 +15,7 @@ const StyledSubHeader = styled.div`
   color: ${themeData.softBlack};
 
   ${mediaQueries.smallResolution} {
-    font-size: 10px;
+    font-size: 9px;
     line-height: 10px;
   }
 

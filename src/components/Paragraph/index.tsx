@@ -1,10 +1,12 @@
 'use client';
 
-import React, { ReactNode } from 'react';
+import React from 'react';
+
+import IParagraph from '@/interfaces/IParagraph';
 
 const StyledParagraph = React.lazy(() => import('./style'));
 
-function Paragraph({ children }: { children: ReactNode }) {
+function Paragraph({ children }: IParagraph) {
   return <StyledParagraph>{children}</StyledParagraph>;
 }
 

@@ -1,10 +1,12 @@
 'use client';
 
-import React, { ReactNode } from 'react';
+import React from 'react';
+
+import IUsersContainer from '@/interfaces/IUsersContainer';
 
 const StyledUsersContainer = React.lazy(() => import('./style'));
 
-function UsersContainer({ children }: { children: ReactNode }) {
+function UsersContainer({ children }: IUsersContainer) {
   return <StyledUsersContainer>{children}</StyledUsersContainer>;
 }
 

@@ -2,14 +2,14 @@
 
 import React from 'react';
 
-import IUser from '@/interfaces/ISpecialist';
-import IUserListingEntry from '@/interfaces/IUserListingEntry';
+import IUser from '@/interfaces/IUser';
+import IUserListing from '@/interfaces/IUserListing';
 
 const UserListingItem = React.lazy(
   () => import('@/components/UserListingItem')
 );
 
-function UserListing({ entries, deleteCallback }: IUserListingEntry) {
+function UserListing({ entries, deleteCallback }: IUserListing) {
   return (
     <>
       {entries.map((entry: IUser) => (

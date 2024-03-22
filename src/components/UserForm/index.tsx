@@ -1,10 +1,11 @@
 'use client';
 
-import React, { ChangeEvent, useEffect, useState } from 'react';
+import React, { ChangeEvent, FormEvent, useEffect, useState } from 'react';
 
+import IUserFormFields from '@/interfaces/IUserFormFields';
 import IUserForm from '@/interfaces/IUserForm';
-import submitUser from '@/services/submitUser';
 
+import submitUser from '@/services/submitUser';
 import getText from '@/services/getText';
 import storeInLocalStorage from '@/services/storeInLocalStorage';
 import getCountries from '@/services/getCountries';
@@ -16,7 +17,7 @@ const FormSelectField = React.lazy(
 const StyledForm = React.lazy(() => import('./style'));
 const FormButton = React.lazy(() => import('@/components/FormButton'));
 
-function UserForm({ modalTrigger }: { modalTrigger: () => {} }) {
+function UserForm({ modalTrigger }: IUserForm) {
   const {
     formFirstNameField,
     formLastNameField,
@@ -37,7 +38,7 @@ function UserForm({ modalTrigger }: { modalTrigger: () => {} }) {
     fetchCountries();
   }, []);
 
-  const userFormDataDefault: IUserForm = {
+  const userFormDataDefault: IUserFormFields = {
     firstname: '',
     lastname: '',
     email: '',
@@ -55,7 +56,7 @@ function UserForm({ modalTrigger }: { modalTrigger: () => {} }) {
     setError(false);
   };
 
-  const onSubmitHandler = async (e: ChangeEvent<HTMLInputElement>) => {
+  const onSubmitHandler = async (e: FormEvent<HTMLInputElement>) => {
     e.preventDefault();
 
     const { id } = await submitUser(formData);
@@ -77,7 +78,6 @@ function UserForm({ modalTrigger }: { modalTrigger: () => {} }) {
       <FormInputField
         type={'text'}
         label={formFirstNameField}
-        role={'input'}
         name={'firstname'}
         value={formData.firstname}
         required

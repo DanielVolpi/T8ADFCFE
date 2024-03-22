@@ -2,9 +2,11 @@
 
 import React from 'react';
 
+import ITrashButton from '@/interfaces/ITrashButton';
+
 const StyledTrashButton = React.lazy(() => import('./style'));
 
-function TrashButton({ onClick }) {
+function TrashButton({ onClick }: ITrashButton) {
   return (
     <StyledTrashButton type='button' onClick={onClick}>
       <img

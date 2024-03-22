@@ -4,7 +4,7 @@ interface IFormSelectField {
   value: any;
   required: boolean;
   options: string[];
-  onChangeCallback: () => {};
+  onChangeCallback: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
 export default IFormSelectField;

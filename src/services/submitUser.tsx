@@ -1,7 +1,7 @@
-import IUserForm from '@/interfaces/IUserForm';
+import IUserFormFields from '@/interfaces/IUserFormFields';
 
 const submitUser = async (
-  formData: IUserForm
+  formData: IUserFormFields
 ): Promise<{ id: string | null }> => {
   const submitUserToDataBase = async () => {
     const response = await fetch(`${process.env.BACKEND_URL}/users`, {

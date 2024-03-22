@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 
 const FETCH_ERROR = 'The fetch was not done successfully';
 
-const useFetch = <T,>(url: string): { data: T[] | T | null; error: any } => {
-  const [data, setData] = useState<T[] | null>(null);
+const useFetch = <T,>(url: string): { data: T | null; error: any } => {
+  const [data, setData] = useState<T | null>(null);
   const [error, setError] = useState<any>(null);
 
   useEffect(() => {

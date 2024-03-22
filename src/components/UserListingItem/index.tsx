@@ -9,7 +9,6 @@ import deleteUser from '@/services/deleteUser';
 const StyledListingItem = React.lazy(() => import('./StyledListingItem'));
 const StyledUserContainer = React.lazy(() => import('./StyledUserContainer'));
 
-const ProfilePicture = React.lazy(() => import('@/components/ProfilePicture'));
 const TextLine = React.lazy(() => import('@/components/TextLine'));
 const TrashButton = React.lazy(() => import('@/components/TrashButton'));
 

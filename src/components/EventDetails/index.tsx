@@ -6,6 +6,7 @@ import useFetch from '@/hooks/useFetch';
 import getText from '@/services/getText';
 
 import ISpecialist from '@/interfaces/ISpecialist';
+
 const StyledEventDetails = React.lazy(() => import('./style'));
 
 const Paragraph = React.lazy(() => import('@/components/Paragraph'));

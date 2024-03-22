@@ -1,10 +1,12 @@
 'use client';
 
-import React, { ReactNode } from 'react';
+import React from 'react';
+
+import IBody from '@/interfaces/IBody';
 
 const StyledBody = React.lazy(() => import('./style'));
 
-function Body({ children }: { children: ReactNode }) {
+function Body({ children }: IBody) {
   return <StyledBody>{children}</StyledBody>;
 }
 

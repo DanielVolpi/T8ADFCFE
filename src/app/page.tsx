@@ -14,13 +14,13 @@ const MainContainer = React.lazy(() => import('@/components/MainContainer'));
 const Modal = React.lazy(() => import('@/components/Modal'));
 
 export default function Home() {
+  const { modalTitle, modalBody } = getText();
+
   const [modal, setModal] = useState(false);
 
   const toggleModal = () => {
     setModal(!modal);
   };
-
-  const { modalTitle, modalBody } = getText();
 
   return (
     <main>

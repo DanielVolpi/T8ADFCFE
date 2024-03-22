@@ -1,6 +1,8 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
+
+import IModal from '@/interfaces/IModal';
 
 const StyledModal = React.lazy(() => import('./StyledModal'));
 const StyledOverlay = React.lazy(() => import('./StyledOverlay'));
@@ -9,17 +11,7 @@ const StyledModalMessage = React.lazy(() => import('./StyledModalMessage'));
 const StyledModalContent = React.lazy(() => import('./StyledModalContent'));
 const StyledModalButton = React.lazy(() => import('./StyledModalButton'));
 
-function Modal({
-  title,
-  message,
-  trigger,
-  isOpened,
-}: {
-  title: string;
-  message: string;
-  trigger: () => {};
-  isOpened: boolean;
-}) {
+function Modal({ title, message, trigger, isOpened }: IModal) {
   return (
     isOpened && (
       <StyledModal>

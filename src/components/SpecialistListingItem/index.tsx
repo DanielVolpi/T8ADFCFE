@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import ISpecialist from '@/interfaces/ISpecialist';
+import ISpecialistListingItem from '@/interfaces/ISpecialistListingItem';
 
 const StyledListingItem = React.lazy(() => import('./style'));
 
@@ -10,11 +10,10 @@ const ProfilePicture = React.lazy(() => import('@/components/ProfilePicture'));
 const TextLine = React.lazy(() => import('@/components/TextLine'));
 
 function SpecialistListingItem({
-  _id,
   firstname,
   lastname,
   position,
-}: ISpecialist) {
+}: ISpecialistListingItem) {
   return (
     <StyledListingItem>
       <ProfilePicture

@@ -1,10 +1,5 @@
 interface IUserForm {
-  firstname: string;
-  lastname: string;
-  email: string;
-  country: string;
-  phoneNumber: string;
-  position: string;
+  modalTrigger: () => void;
 }
 
 export default IUserForm;
